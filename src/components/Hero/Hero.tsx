@@ -1,6 +1,6 @@
 function Hero() {
     return (
-        <section className="w-full h-[calc(100vh-2.5rem)] place-items-center content-center">
+        <section id="hero" className="w-full h-[calc(100vh-2.5rem)] place-items-center content-center">
             <div className="border-8 py-35 px-20 bg-white leading-10">
                 <h3>Hola! Mi nombre es</h3>
                 <h1 className="text-6xl font-bold">{"</ Juan Alva>"}</h1>

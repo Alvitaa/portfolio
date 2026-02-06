@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 function Clock() {
-    var [time, setTime] = useState("00:00:00");
+    const [time, setTime] = useState("00:00:00");
 
     useEffect(() => {
         setInterval(() => {
@@ -24,10 +24,10 @@ function Clock() {
 function Nav() {
     return (
         <nav className="w-full h-10 font-bold border-b-1 flex place-content-around items-center">
-            <h3>inicio</h3>
-            <h3>sobre mi</h3>
-            <h3>proyectos</h3>
-            <h3>habilidades</h3>
+            <a href="#hero">inicio</a>
+            <a href="#about">sobre mi</a>
+            <a href="#projects">proyectos</a>
+            <a href="#skills">habilidades</a>
             <Clock />
             <div className="bg-main text-white px-8 py-2">
                 <h3>EN | ES</h3>
