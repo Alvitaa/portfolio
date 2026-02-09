@@ -18,14 +18,14 @@ const Clock = () => {
 
 function Nav() {
     return (
-        <nav className="w-full gap-4 h-10 font-bold border-b flex place-content-between items-center">
+        <nav className="w-full gap-4 h-10 font-bold border-b flex place-content-end items-center">
             <div className="flex flex-row place-content-evenly flex-1">
                 <a href="#hero">inicio</a>
                 <a href="#about">sobre mi</a>
                 <a href="#projects">proyectos</a>
                 <a href="#skills">habilidades</a>
             </div>
-            <div className="flex flex-row gap-2 items-center">
+            <div className="flex flex-row gap-2 items-center pr-3">
                 <Clock />
                 <div className="border-3">
                     <Peru />
