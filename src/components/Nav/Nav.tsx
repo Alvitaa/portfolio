@@ -29,12 +29,10 @@ function Nav() {
                 <span className="font-bold">PE</span>
             </div>
             <div className={`w-1/12 border-l text-black h-full py-2 text-center ${isScrolled ? "bg-main text-white" : "bg-transparent"}`}>
-                <h3>EN | ES</h3>
+                <h3>EN | <u>ES</u></h3>
             </div>
         </nav>
     )
 }
-
-/* bg-main para el selector de Idioma */
 
 export default Nav

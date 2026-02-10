@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Beam />
-      <main className='background'>
+      <main className="background">
         <Nav />
         <Hero />
         {items.map(({ id, Component }, index) => (

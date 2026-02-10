@@ -1,9 +1,15 @@
 .beam {
-  position: absolute;
-  top: 132vh;
-  width: 100%;
-  z-index: 1000;
+    top: 132vh;
+    z-index: 1000;
+    will-change:
+        transform,
+        mask-image,
+        -webkit-mask-image;
 
-  will-change: transform;
-  pointer-events: none;
+    will-change: transform;
+    pointer-events: none;
+}
+
+.beam-edge {
+  will-change: filter;
 }
