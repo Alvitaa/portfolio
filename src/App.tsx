@@ -6,27 +6,30 @@ import Nav from './components/Nav/Nav'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 
+
 type SectionItem = {
   id: string,
   Component: ComponentType
 }
 
 const items: SectionItem[] = [
-  {id: "about", Component: About},
-  {id: "projects", Component: Projects},
-  {id: "skills", Component: Skills},
+  { id: "about", Component: About },
+  { id: "projects", Component: Projects },
+  { id: "skills", Component: Skills },
 ]
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      {items.map(({id, Component}, index) => (
-        <section key={index} id={id} className="min-h-screen p-5">
-          <Component />
-        </section>
-      ))}
+      <main className='background'>
+        <Nav />
+        <Hero />
+        {items.map(({ id, Component }, index) => (
+          <section key={index} id={id} className="min-h-screen p-5 pt-15">
+            <Component />
+          </section>
+        ))}
+      </main >
     </>
   )
 }
