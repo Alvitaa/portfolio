@@ -5,7 +5,7 @@ import Hero from './components/Hero/Hero'
 import Nav from './components/Nav/Nav'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
-
+import Beam from './components/Beam/Beam'
 
 type SectionItem = {
   id: string,
@@ -21,6 +21,7 @@ const items: SectionItem[] = [
 function App() {
   return (
     <>
+      <Beam />
       <main className='background'>
         <Nav />
         <Hero />

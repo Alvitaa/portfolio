@@ -1,0 +1,9 @@
+.beam {
+  position: absolute;
+  top: 121vh;
+  width: 100%;
+  z-index: 1000;
+
+  will-change: transform;
+  pointer-events: none;
+}
