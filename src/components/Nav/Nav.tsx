@@ -14,7 +14,7 @@ function Nav() {
     }, []);
 
     return (
-        <nav className={`sticky top-0 w-full gap-4 h-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled ? "bg-white" : "bg-transparent"}`}>
+        <nav className={`sticky top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled ? "bg-white" : "bg-transparent"}`}>
             <div className="flex flex-row place-content-evenly flex-1">
                 <a href="#hero">inicio</a>
                 <a href="#about">sobre mi</a>
