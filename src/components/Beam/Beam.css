@@ -1,5 +1,4 @@
 .beam {
-    top: 132vh;
     z-index: 1000;
     will-change:
         transform,

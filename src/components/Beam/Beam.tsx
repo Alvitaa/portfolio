@@ -14,18 +14,30 @@ const Beam: React.FC = () => {
     const ticking = useRef(false);
 
     useEffect(() => {
-
         const onScroll = () => {
+            const hero = document.getElementById("hero");
+            const nav = document.getElementById("nav");
             lastScroll.current = window.scrollY;
 
             if (!ticking.current) {
                 requestAnimationFrame(() => {
-                    if (!beamRef.current) return;
+                    if (!beamRef.current || !hero) return;
 
-                    // Parallax effect
-                    const parallaxSpeed = - 0.17;
-                    const beamOffset = lastScroll.current * parallaxSpeed;
-                    beamRef.current.style.transform = `translateY(${beamOffset}px)`;
+                    const beamHeight = beamRef.current.offsetHeight;
+                    const heroHeight = hero.offsetHeight;
+                    const navHeight = nav? nav.offsetHeight : 0;
+                    const travelDistance = heroHeight;
+
+                    const progress = Math.min(lastScroll.current / travelDistance, 1);
+
+                    const startY = heroHeight;
+                    const endY = heroHeight + navHeight - beamHeight;
+
+                    const currentY =
+                        startY + (endY - startY) * progress;
+
+                    beamRef.current.style.transform =
+                        `translate(-50%, ${currentY}px)`;
 
                     ticking.current = false;
                 });
@@ -43,7 +55,7 @@ const Beam: React.FC = () => {
     }, []);
 
     return (
-        <div ref={beamRef} className="beam bg-neutral-400 absolute w-full h-80 pointer-events-none text-3xl">
+        <div ref={beamRef} className="beam bg-neutral-400 absolute top-0 left-1/2 w-full h-80 pointer-events-none text-3xl">
             <div className="flex flex-row place-content-between blur-[2px] h-full items-center text-9xl p-5">
                 <div className="relative h-full">
                     <img src={Graffiti} className="h-40 relative top-10 left-5 rotate-5" />
