@@ -1,5 +1,5 @@
 function Footer () {
-    return <footer className="bg-black text-white text-md p-5 flex flex-col place-content-between h-[35vh]">
+    return <footer className="bg-black text-white text-md p-5 flex flex-col place-content-between gap-10">
         <div className="border-l-3 pl-5 border-white leading-10">
             <h3 className="text-3xl font-semibold">Tristemente, este es el final :(</h3>
             <p>Pero puedes chequear mis redes sociales, puedes enviarme un mensaje si quieres contactarme!</p>

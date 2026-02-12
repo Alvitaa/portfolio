@@ -15,11 +15,11 @@ function Nav() {
 
     return (
         <nav id="nav" className={`sticky top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled ? "bg-white" : "bg-transparent"}`}>
-            <div className="flex flex-row place-content-evenly flex-1">
+            <div className="absolute left-1/2 -translate-x-1/2 flex flex-row place-content-center gap-10 flex-1">
                 <a href="#hero">inicio</a>
                 <a href="#about">sobre mi</a>
                 <a href="#projects">proyectos</a>
-                <a href="#skills">habilidades</a>
+                {/* <a href="#skills">habilidades</a> */}
             </div>
             <div className="flex flex-row gap-2 items-center pr-3">
                 <Clock />

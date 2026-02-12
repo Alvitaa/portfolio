@@ -4,7 +4,7 @@ import About from './components/About/About'
 import Hero from './components/Hero/Hero'
 import Nav from './components/Nav/Nav'
 import Projects from './components/Projects/Projects'
-import Skills from './components/Skills/Skills'
+//import Skills from './components/Skills/Skills'
 import Beam from './components/Beam/Beam'
 import Footer from './components/Footer/Footer'
 
@@ -16,7 +16,7 @@ type SectionItem = {
 const items: SectionItem[] = [
   { id: "about", Component: About },
   { id: "projects", Component: Projects },
-  { id: "skills", Component: Skills },
+  // { id: "skills", Component: Skills },
 ]
 
 function App() {
