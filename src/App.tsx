@@ -6,6 +6,7 @@ import Nav from './components/Nav/Nav'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 import Beam from './components/Beam/Beam'
+import Footer from './components/Footer/Footer'
 
 type SectionItem = {
   id: string,
@@ -30,6 +31,7 @@ function App() {
             <Component />
           </section>
         ))}
+        <Footer />
       </main >
     </>
   )
