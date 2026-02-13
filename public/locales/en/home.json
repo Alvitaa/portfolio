@@ -4,7 +4,24 @@
         "about": "about",
         "projects": "projects"
     },
-    "presentation": "Hi! My name is",
-    "profession": "I'm a Frontend developer with experience in fullstack apps development",
-    "tagline": "Building interfaces that connect users with systems"
+    "hero": {
+        "presentation": "Hi! My name is",
+        "profession": "I'm a Frontend developer with experience in fullstack apps development",
+        "tagline": "Building interfaces that connect users with systems"
+    },
+    "about": {
+        "title": "About me",
+        "text": [
+          "As a child, I was always interested in understanding how technology works and how most of the things we interact with every day use it, which lead me to pursue a Bachelor's degree in Systems Engineering.",
+          "Currently, I'm looking to begin my professional journey as a frontend developer, strengthening my technical skills and gaining experience by participating in impactful projects.",
+          "This portfolio is inspired by train line systems and their stations, which I find fascinating because of their logic, organization, and efficiency. These are qualities I consider fundamental in developing good software."
+        ],
+        "signature": "Written by {{name}} - Frontend developer"
+    },
+    "footer": {
+      "tagline": "Sadly, this is the end :(",
+      "contact": "But you can check my socials, feel free to message if you want to reach out!",
+      "madeBy": "Made by {{name}}",
+      "stack": "This website uses React + Vite, Tailwind CSS and i18n"
+    }
 }
