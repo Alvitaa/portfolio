@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import Backgound from "../../assets/images/cloudy-sky.webp";
-import { LanguageContext } from "../../i18n/LanguageContext";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
-    const {t} = useContext(LanguageContext);
+    const {t} = useTranslation("home");
     const steps = 12;
 
     return (

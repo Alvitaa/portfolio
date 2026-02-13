@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "hero": "inicio",
+        "about": "sobre mi",
+        "projects": "proyectos"
+    },
+    "presentation": "Hola! Mi nombre es",
+    "profession": "Soy un desarrollador Frontend con experiencia en el desarrollo de aplicaciones Fullstack",
+    "tagline": "Construyendo interfaces que conectan usuarios con sistemas."
+}
