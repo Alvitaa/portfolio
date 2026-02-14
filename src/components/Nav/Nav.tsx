@@ -27,7 +27,7 @@ function Nav() {
     }
 
     return (
-        <nav id="nav" className={`${isHome ? "sticky" : "relative"} top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled || !isHome ? "bg-white" : "bg-transparent"}`}>
+        <nav id="nav" className={`${isHome ? "sticky" : "relative"} top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled || !isHome ? "bg-white" : "bg-transparent backdrop-blur-md"}`}>
             <div className="absolute left-1/2 -translate-x-1/2 flex flex-row place-content-center gap-10 flex-1">
                 {location.pathname === "/" ?
                     <>

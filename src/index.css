@@ -1,20 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-main: #21839E;
+    --color-main: #21839e;
+    --shadow-s:
+        inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
+    --shadow-m:
+        inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000015;
+    --shadow-l:
+        inset 0 1px 2px #ffffff70, 0 4px 6px #00000030, 0 6px 12px #00000015;
 }
 
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1; /* fix for Chrome */
 }
 
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
 body {
-  background: #F2F2F2;
-  margin: 0;
-  padding: 0;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
