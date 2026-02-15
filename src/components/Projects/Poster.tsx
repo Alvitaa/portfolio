@@ -1,20 +1,19 @@
-function Poster({ project }) {
+interface Props {
+    project: {
+        id: string;
+        title: string;
+        color: string;
+        subtitle: string;
+    },
+}
+
+function Poster({ project }: Props) {
     return (
-        <div className="snap-center
-        shrink-0
-        w-full min-h-[70vh]
-        bg-white
-        border-5
-        shadow-l
-        duration-300
-        hover:scale-[1.03]
-        hover:-translate-y-2
-        cursor-pointer
-        flex
-        flex-col
-        justify-between
-        p-6">
-            <div className={`h-2/3 rounded-md ${project.color}`} />
+        <div
+            className="min-w-2/3 max-w-2/3 h-[60vh] p-5 border-5"
+        >
+            <div className={`h-56 ${project.color}`} />
+
             <div className="space-y-3">
                 <p className="text-xs tracking-widest text-neutral-500">
                     PROYECTO {project.id}
@@ -29,11 +28,9 @@ function Poster({ project }) {
                 </p>
             </div>
 
-            <div className="flex justify-between items-center text-sm font-medium">
+            <div className="flex justify-between text-sm font-medium">
                 <span className="text-neutral-500">React · Tailwind</span>
-                <button className="text-neutral-900 underline">
-                    Ver más
-                </button>
+                <span className="underline">Ver más</span>
             </div>
         </div>
     );

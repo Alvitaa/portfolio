@@ -7,7 +7,7 @@
     "hero": {
         "presentation": "Hi! My name is",
         "profession": "I'm a Frontend developer with experience in fullstack apps development",
-        "tagline": "Building interfaces that connect users with systems"
+        "tagline": "Building interfaces that connect users and systems"
     },
     "about": {
         "title": "About me",

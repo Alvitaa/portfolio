@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Poster from "./Poster";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const projects = [
     { id: "01", title: "Datos que hablan", subtitle: "Dashboard analítico", color: "bg-blue-500" },
@@ -8,18 +10,46 @@ const projects = [
 ];
 
 function ProjectsPreview() {
+    const [index, setIndex] = useState(0);
+
+    function handleNext() {
+        setIndex((prevIndex) => (prevIndex + 1) % projects.length);
+    };
+
+    function handlePrevious() {
+        setIndex(
+            (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
+        );
+    };
+
+    function getVisibleProjects() {
+        const prevIndex =
+            (index - 1 + projects.length) % projects.length;
+        const nextIndex = (index + 1) % projects.length;
+
+        return [projects[prevIndex], projects[index], projects[nextIndex]];
+    }
+
+    const visibleProjects = getVisibleProjects();
+
     return (
-        <section id="projects" className="min-h-[90vh] pt-15 overflow-hidden flex flex-col gap-5 items-center place-content-center">
+        <section id="projects" className="relative h-[95vh] max-h-screen pt-15 flex flex-col items-center place-content-start overflow-hidden">
             <div className="w-full border-neutral-50 border-t border-b shadow-m">
                 <div className="w-full h-5 bg-main"></div>
                 <h3 className="text-3xl font-bold text-center p-5">Estación: Mis Proyectos</h3>
             </div>
-            <div className="w-full min-h-[75vh] p-5 overflow-x-auto scroll-smooth snap-x snap-mandatory">
-                <div className="flex gap-20 px-20">
-                    {projects.map((project) => (
-                        <Poster key={project.id} project={project} />
+            <div className="w-full h-full flex flex-row place-content-center items-center">
+                <button onClick={handlePrevious} className="absolute left-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl">
+                    <FaArrowLeft />
+                </button>
+                <div className="flex gap-20 place-content-center items-center">
+                    {visibleProjects.map((project, index) => (
+                        <Poster key={index} project={project} />
                     ))}
                 </div>
+                <button onClick={handleNext} className="absolute right-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl">
+                    <FaArrowRight />
+                </button>
             </div>
         </section>
     );
