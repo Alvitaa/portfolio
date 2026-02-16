@@ -37,7 +37,7 @@ function ProjectsPreview() {
                 <button onClick={handlePrevious} className="absolute left-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl z-5">
                     <FaArrowLeft />
                 </button>
-                <div className="w-full flex flex-row gap-50 place-content-center">
+                <div className="w-full flex flex-row gap-40 place-content-center">
                     {visibleProjects.map((project, index) => (
                         <Poster key={index} project={project} />
                     )

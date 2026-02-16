@@ -1,13 +1,16 @@
 {
     "title": "My Projects",
+    "project": "Project",
+    "role_one": "Role",
+    "role_other": "Roles",
     "list": [
         {
             "id": 1,
             "color": "bg-green-500",
             "slug": "urban-transport-dashboard",
-            "hook": "Understand urban mobility. Make decisions backed by data.",
+            "hook": "Turn data into clear metrics and understand urban mobility.",
             "title": "Urban Transport Dashboard",
-            "description": "Web dashboard focused on urban transport data visualization, enabling the analysis of traffic flow and zone-based metrics through a clear and modular interface.",
+            "description": "Web dashboard focused on analyzing train line data, enabling the calculation and visualization of key metrics such as passenger daily flow, lines demand, and arrival intervals through structured tables and interactive charts.",
             "highlights": [
                 "Reusable component-based architecture",
                 "Structured visualization of complex datasets",
@@ -34,7 +37,7 @@
                 "Relational database persistence",
                 "Client and server-side data validation"
             ],
-            "role": ["Frontend"],
+            "role": ["Frontend", "backend"],
             "stack": ["React", "Node.js", "Spring Boot", "MySQL"],
             "links": {
                 "demo": "",
@@ -55,7 +58,7 @@
                 "Client-server architecture using REST API",
                 "Relational database persistence"
             ],
-            "role": ["Frontend"],
+            "role": ["Frontend", "backend"],
             "stack": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL"],
             "links": {
                 "demo": "",
@@ -86,16 +89,16 @@
             "id": 5,
             "color": "bg-red-600",
             "slug": "SDDA",
-            "hook": "Bringing structure and clarity to digital legal processes.",
+            "hook": "Digitizing legal processes with structure and clarity.",
             "title": "Digital Child Support Management System",
-            "description": "Web platform designed to digitally manage child support claims, structuring complex legal forms and securely storing organized data.",
+            "description": "Web platform designed to digitally manage child support claims, enabling the structuring of complex legal forms and the secure, organized storage of information to facilitate proper review and processing by relevant authorities.",
             "highlights": [
                 "Dynamic forms with advanced validation",
                 "Structured legal information handling",
                 "Data integrity through relational database design",
                 "Full-stack architecture with clear responsibility separation"
             ],
-            "role": ["Frontend"],
+            "role": ["Frontend", "backend"],
             "stack": ["React", "Express", "PostgreSQL"],
             "links": {
                 "demo": "",

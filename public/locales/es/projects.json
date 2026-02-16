@@ -1,13 +1,16 @@
 {
     "title": "Mis Proyectos",
+    "project": "Proyecto",
+    "role_one": "Rol",
+    "role_other": "Roles",
     "list": [
         {
             "id": 1,
             "color": "bg-green-500",
             "slug": "urban-transport-dashboard",
-            "hook": "Visualiza el movimiento urbano. Toma decisiones con datos.",
+            "hook": "Convierte datos en métricas claras y visualiza el movimiento urbano.",
             "title": "Urban Transport Dashboard",
-            "description": "Dashboard web enfocado en la visualización de datos de transporte urbano, permitiendo analizar métricas como flujo vehicular y comportamiento por zonas mediante una interfaz clara y modular.",
+            "description": "Dashboard web orientado al análisis de datos de líneas de tren, permitiendo calcular y visualizar métricas clave como flujo diario de pasajeros, demanda por líneas, e intervalos de llegada mediante tablas y gráficos interactivos.",
             "highlights": [
                 "Arquitectura basada en componentes reutilizables",
                 "Visualización estructurada de datos complejos",
@@ -34,7 +37,7 @@
                 "Persistencia de datos con base relacional",
                 "Validaciones estructuradas en cliente y servidor"
             ],
-            "role": ["Frontend"],
+            "role": ["Frontend", "backend"],
             "stack": ["React", "Node.js", "Spring Boot", "MySQL"],
             "links": {
                 "demo": "",
@@ -55,7 +58,7 @@
                 "Arquitectura cliente-servidor con API REST",
                 "Persistencia de datos en base relacional"
             ],
-            "role": ["Frontend"],
+            "role": ["Frontend", "backend"],
             "stack": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL"],
             "links": {
                 "demo": "",
@@ -86,16 +89,16 @@
             "id": 5,
             "color": "bg-red-600",
             "slug": "SDDA",
-            "hook": "Digitalizando procesos legales con estructura y claridad.",
+            "hook": "Digitalizando procesos legales con estructura y claridad",
             "title": "Sistema Digital de Demandas Alimenticias",
-            "description": "Plataforma web orientada a la gestión digital de demandas alimenticias, estructurando formularios complejos y almacenando información de forma segura y organizada.",
+            "description": "Plataforma web diseñada para la gestión de demandas alimenticias, permitiendo estructurar formularios complejos y almacenar información de manera segura y organizada, facilitando su procesamiento por parte de autoridades competentes.",
             "highlights": [
                 "Formularios dinámicos con validación avanzada",
                 "Estructuración formal de información legal",
                 "Integridad de datos mediante base relacional",
                 "Arquitectura full stack con separación de responsabilidades"
             ],
-            "role": ["Frontend"],
+            "role": ["Frontend", "backend"],
             "stack": ["React", "Express", "PostgreSQL"],
             "links": {
                 "demo": "",
