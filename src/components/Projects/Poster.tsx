@@ -21,21 +21,29 @@ function Poster({ project }: Props) {
                 </div>
                 <p className="text-md">{project.description}</p>
                 <div className="flex flex-row border-t border-neutral-400 pt-5 text-sm place-content-between">
-                    <div className="text-neutral-500">
+                    <div className="text-neutral-500 flex-1">
                         <p className="">
                             {t("role", { count: project.role.length })}: {project.role.join(", ")}
                         </p>
                         <p className="">Stack: {project.stack.join(" · ")}</p>
                     </div>
-                    <div className="flex flex-col gap-2">
-                        <button className="flex flex-row font-medium underline cursor-pointer items-center gap-1"><FaGithub /> Github</button>
-                        <button className="flex flex-row font-medium underline cursor-pointer items-center gap-1"><FaCode /> Live Demo</button>
+                    <div className="flex flex-col gap-2 place-content-center">
+                        {project.links.repository !== null &&
+                            <a className="flex flex-row font-medium underline cursor-pointer items-center gap-1" href={project.links.repository} target="_blank" rel="noopener noreferrer"><FaGithub /> Github</a>
+                        }
+                        {project.links.demo !== null &&
+                            <a className="flex flex-row font-medium underline cursor-pointer items-center gap-1" href={project.links.demo} target="_blank" rel="noopener noreferrer"><FaCode /> Live Demo</a>
+                        }
                     </div>
                 </div>
             </div>
-            <div className={`flex-1 flex flex-col place-content-center ${project.color} p-3 mr-5 gap-4`}>
+            <div className={`flex-1 flex flex-col place-content-center items-center ${project.color} p-3 mr-5 gap-4`}>
                 {project.images.map((url) => (
-                    <img src={url} alt={t("view")} className="w-full bg-cover border border-neutral-400 hover:scale-130 duration-300" />
+                    <img
+                        src={url}
+                        alt={t("view")}
+                        className={`w-fit ${project.type === "web" ? "h-fit" : "h-full"} object-contain bg-cover shadow-s hover:scale-130 duration-300`}
+                    />
                 ))}
             </div>
         </div>

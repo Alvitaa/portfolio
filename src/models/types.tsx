@@ -6,6 +6,7 @@ export interface Project {
     highlights: string[],
     id: number;
     color: string;
+    type: string;
     images: string[];
     role: string[],
     stack: string[],
@@ -18,6 +19,7 @@ export interface Project {
 export interface ProjectStatic {
     id: number;
     color: string;
+    type: string;
     images: string[];
     role: string[],
     stack: string[],

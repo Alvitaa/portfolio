@@ -32,7 +32,7 @@
         {
             "slug": "KOBE",
             "hook": "Track your money. Plan your financial future.",
-            "title": "Personal Finance Manager",
+            "title": "KOBEY - Personal Finance Manager",
             "description": "Mobile application built with Flutter that allows users to manage monthly budgets and record financial transactions such as income and expenses, with data persistence through a REST API.",
             "highlights": [
                 "Cross-platform mobile development with Flutter",

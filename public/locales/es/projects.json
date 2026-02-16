@@ -32,7 +32,7 @@
         {
             "slug": "KOBE",
             "hook": "Controla tu dinero. Visualiza tu futuro financiero.",
-            "title": "Administrador de Finanzas Personales",
+            "title": "KOBEY - Administrador de Finanzas Personales",
             "description": "Aplicación móvil desarrollada con Flutter que permite gestionar presupuestos mensuales y registrar movimientos financieros como ingresos y gastos, con persistencia de datos mediante API REST.",
             "highlights": [
                 "Desarrollo mobile multiplataforma con Flutter",
