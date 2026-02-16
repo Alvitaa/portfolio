@@ -17,11 +17,11 @@ function Poster({ project }: Props) {
                 </p>
 
                 <h3 className="text-2xl font-semibold text-neutral-900">
-                    {project.title}
+                    {project.hook}
                 </h3>
 
                 <p className="text-sm text-neutral-600">
-                    {project.subtitle}
+                    {project.title}
                 </p>
             </div>
 

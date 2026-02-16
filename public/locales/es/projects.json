@@ -1,0 +1,106 @@
+{
+    "title": "Mis Proyectos",
+    "list": [
+        {
+            "id": 1,
+            "color": "bg-green-500",
+            "slug": "urban-transport-dashboard",
+            "hook": "Visualiza el movimiento urbano. Toma decisiones con datos.",
+            "title": "Urban Transport Dashboard",
+            "description": "Dashboard web enfocado en la visualización de datos de transporte urbano, permitiendo analizar métricas como flujo vehicular y comportamiento por zonas mediante una interfaz clara y modular.",
+            "highlights": [
+                "Arquitectura basada en componentes reutilizables",
+                "Visualización estructurada de datos complejos",
+                "Diseño responsive optimizado para distintos dispositivos",
+                "Enfoque en escalabilidad y mantenibilidad"
+            ],
+            "role": ["Frontend"],
+            "stack": ["Angular", "TypeScript", "Tailwind CSS"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 2,
+            "color": "bg-yellow-400",
+            "slug": "notes-react-app",
+            "hook": "Organiza tus ideas. Accede a ellas cuando lo necesites.",
+            "title": "Gestor de Notas Escritas",
+            "description": "Aplicación web para la creación y gestión de notas con persistencia en base de datos relacional, implementando operaciones CRUD completas bajo una arquitectura cliente-servidor.",
+            "highlights": [
+                "Separación clara entre frontend y backend",
+                "Consumo de API REST",
+                "Persistencia de datos con base relacional",
+                "Validaciones estructuradas en cliente y servidor"
+            ],
+            "role": ["Frontend"],
+            "stack": ["React", "Node.js", "Spring Boot", "MySQL"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 3,
+            "color": "bg-violet-950",
+            "slug": "KOBE",
+            "hook": "Controla tu dinero. Visualiza tu futuro financiero.",
+            "title": "Administrador de Finanzas Personales",
+            "description": "Aplicación móvil desarrollada con Flutter que permite gestionar presupuestos mensuales y registrar movimientos financieros como ingresos y gastos, con persistencia de datos mediante API REST.",
+            "highlights": [
+                "Desarrollo mobile multiplataforma con Flutter",
+                "Gestión de presupuestos dinámicos por categoría",
+                "Registro estructurado de ingresos y gastos",
+                "Arquitectura cliente-servidor con API REST",
+                "Persistencia de datos en base relacional"
+            ],
+            "role": ["Frontend"],
+            "stack": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 4,
+            "color": "bg-sky-500",
+            "slug": "ecommerce-accesible",
+            "hook": "Diseñado para todos. Sin excepciones.",
+            "title": "Space Ecommerce Experience",
+            "description": "Aplicación web tipo ecommerce desarrollada con enfoque en accesibilidad digital, siguiendo lineamientos de la W3C y criterios WCAG para mejorar la experiencia de usuarios con visión limitada.",
+            "highlights": [
+                "Cumplimiento de estándares de accesibilidad (WCAG)",
+                "Navegación completa por teclado",
+                "Uso correcto de HTML semántico y atributos ARIA",
+                "Optimización de contraste y jerarquía visual"
+            ],
+            "role": ["Frontend"],
+            "stack": ["React", "HTML + CSS", "Figma"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 5,
+            "color": "bg-red-600",
+            "slug": "SDDA",
+            "hook": "Digitalizando procesos legales con estructura y claridad.",
+            "title": "Sistema Digital de Demandas Alimenticias",
+            "description": "Plataforma web orientada a la gestión digital de demandas alimenticias, estructurando formularios complejos y almacenando información de forma segura y organizada.",
+            "highlights": [
+                "Formularios dinámicos con validación avanzada",
+                "Estructuración formal de información legal",
+                "Integridad de datos mediante base relacional",
+                "Arquitectura full stack con separación de responsabilidades"
+            ],
+            "role": ["Frontend"],
+            "stack": ["React", "Express", "PostgreSQL"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "title": "My Projects",
+    "list": [
+        {
+            "id": 1,
+            "color": "bg-green-500",
+            "slug": "urban-transport-dashboard",
+            "hook": "Understand urban mobility. Make decisions backed by data.",
+            "title": "Urban Transport Dashboard",
+            "description": "Web dashboard focused on urban transport data visualization, enabling the analysis of traffic flow and zone-based metrics through a clear and modular interface.",
+            "highlights": [
+                "Reusable component-based architecture",
+                "Structured visualization of complex datasets",
+                "Responsive design across multiple devices",
+                "Scalable and maintainable project structure"
+            ],
+            "role": ["Frontend"],
+            "stack": ["Angular", "TypeScript", "Tailwind CSS"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 2,
+            "color": "bg-yellow-400",
+            "slug": "notes-react-app",
+            "hook": "Capture your ideas. Access them anytime.",
+            "title": "Written Notes Manager",
+            "description": "Full-stack web application for creating and managing persistent notes, implementing complete CRUD operations within a client-server architecture.",
+            "highlights": [
+                "Clear separation between frontend and backend",
+                "REST API consumption",
+                "Relational database persistence",
+                "Client and server-side data validation"
+            ],
+            "role": ["Frontend"],
+            "stack": ["React", "Node.js", "Spring Boot", "MySQL"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 3,
+            "color": "bg-violet-950",
+            "slug": "KOBE",
+            "hook": "Track your money. Plan your financial future.",
+            "title": "Personal Finance Manager",
+            "description": "Mobile application built with Flutter that allows users to manage monthly budgets and record financial transactions such as income and expenses, with data persistence through a REST API.",
+            "highlights": [
+                "Cross-platform mobile development with Flutter",
+                "Dynamic budget management by category",
+                "Structured income and expense tracking",
+                "Client-server architecture using REST API",
+                "Relational database persistence"
+            ],
+            "role": ["Frontend"],
+            "stack": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 4,
+            "color": "bg-sky-500",
+            "slug": "ecommerce-accessible",
+            "hook": "Designed for everyone. No exceptions.",
+            "title": "Space Ecommerce Experience",
+            "description": "Ecommerce-style web application built with a strong focus on accessibility, following W3C guidelines and WCAG standards to improve usability for users with visual impairments.",
+            "highlights": [
+                "WCAG accessibility compliance",
+                "Full keyboard navigation support",
+                "Proper semantic HTML and ARIA usage",
+                "Optimized contrast and visual hierarchy"
+            ],
+            "role": ["Frontend"],
+            "stack": ["React", "HTML + CSS", "Figma"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        },
+        {
+            "id": 5,
+            "color": "bg-red-600",
+            "slug": "SDDA",
+            "hook": "Bringing structure and clarity to digital legal processes.",
+            "title": "Digital Child Support Management System",
+            "description": "Web platform designed to digitally manage child support claims, structuring complex legal forms and securely storing organized data.",
+            "highlights": [
+                "Dynamic forms with advanced validation",
+                "Structured legal information handling",
+                "Data integrity through relational database design",
+                "Full-stack architecture with clear responsibility separation"
+            ],
+            "role": ["Frontend"],
+            "stack": ["React", "Express", "PostgreSQL"],
+            "links": {
+                "demo": "",
+                "repository": ""
+            }
+        }
+    ]
+}
