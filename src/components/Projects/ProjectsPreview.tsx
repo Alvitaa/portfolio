@@ -11,34 +11,20 @@ const projects = [
 
 function ProjectsPreview() {
     const [index, setIndex] = useState(0);
+    const total = projects.length;
 
     function handleNext() {
-        setIndex((prevIndex) => (prevIndex + 1) % projects.length);
+        setIndex((prev) => (prev + 1) % projects.length);
     };
 
     function handlePrevious() {
-        setIndex(
-            (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
-        );
+        setIndex( (prev) => (prev - 1 + projects.length) % projects.length );
     };
-
-    function getVisibleProjects() {
-        const prevIndex = (index - 1 + projects.length) % projects.length;
-        const nextIndex = (index + 1) % projects.length;
-
-        return [
-            { project: projects[prevIndex], realIndex: prevIndex },
-            { project: projects[index], realIndex: index },
-            { project: projects[nextIndex], realIndex: nextIndex }
-        ];
-    }
 
     function handleClick(index: number) {
         setIndex(index);
         console.log(index);
     }
-
-    const visibleProjects = getVisibleProjects();
 
     return (
         <section id="projects" className="relative h-[95vh] max-h-screen pt-15 flex flex-col items-center place-content-start overflow-hidden">
@@ -50,9 +36,12 @@ function ProjectsPreview() {
                 <button onClick={handlePrevious} className="absolute left-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl z-5">
                     <FaArrowLeft />
                 </button>
-                <div className="flex gap-20 place-content-center items-center">
-                    {visibleProjects.map(({project, realIndex}, index) => (
-                        <Poster key={index} project={project} onClick={() => handleClick(realIndex)} />
+                <div
+                    className="flex gap-30 transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${index * 50 }%)` }}
+                >
+                    {projects.map((project, index) => (
+                        <Poster key={index} project={project} onClick={() => handleClick(index)} />
                     ))}
                 </div>
                 <button onClick={handleNext} className="absolute right-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl z-5">

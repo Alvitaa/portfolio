@@ -11,7 +11,7 @@ interface Props {
 function Poster({ project, onClick }: Props) {
     return (
         <div
-            className="min-w-2/3 max-w-2/3 h-[60vh] p-5 border-5 hover:scale-105 duration-300"
+            className="min-w-1/2 max-w-1/2 h-[60vh] p-5 border-5 hover:scale-105 duration-300 translate-x-1/2"
             onClick={() => onClick()}
         >
             <div className={`h-56 ${project.color}`} />
