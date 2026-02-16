@@ -1,20 +1,15 @@
+import type { Project } from "../../models/types";
+
 interface Props {
-    project: {
-        id: string;
-        title: string;
-        color: string;
-        subtitle: string;
-    },
-    onClick: () => void,
+    project: Project;
 }
 
-function Poster({ project, onClick }: Props) {
+function Poster({ project }: Props) {
     return (
         <div
-            className="min-w-1/2 max-w-1/2 h-[60vh] p-5 border-5 hover:scale-105 duration-300 translate-x-1/2"
-            onClick={() => onClick()}
+            className="flex flex-col min-w-2/5 max-w-2/5 h-[50vh] p-5 border-5 hover:scale-105 duration-300"
         >
-            <div className={`h-56 ${project.color}`} />
+            <div className={`flex-1 ${project.color}`} />
 
             <div className="space-y-3">
                 <p className="text-xs tracking-widest text-neutral-500">
