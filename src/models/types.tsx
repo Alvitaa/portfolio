@@ -1,15 +1,28 @@
 export interface Project {
-    id: number,
-    color: string,
     slug: string,
     hook: string,
     title: string,
     description: string,
     highlights: string[],
+    id: number;
+    color: string;
+    images: string[];
     role: string[],
     stack: string[],
     links: {
-        demo: string | null,
-        repository: string | null
+        demo: string | null;
+        repository: string | null;
+    }
+}
+
+export interface ProjectStatic {
+    id: number;
+    color: string;
+    images: string[];
+    role: string[],
+    stack: string[],
+    links: {
+        demo: string | null;
+        repository: string | null;
     }
 }

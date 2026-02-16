@@ -3,10 +3,9 @@
     "project": "Project",
     "role_one": "Role",
     "role_other": "Roles",
+    "view": "Vista de proyecto",
     "list": [
         {
-            "id": 1,
-            "color": "bg-green-500",
             "slug": "urban-transport-dashboard",
             "hook": "Turn data into clear metrics and understand urban mobility.",
             "title": "Urban Transport Dashboard",
@@ -16,17 +15,9 @@
                 "Structured visualization of complex datasets",
                 "Responsive design across multiple devices",
                 "Scalable and maintainable project structure"
-            ],
-            "role": ["Frontend"],
-            "stack": ["Angular", "TypeScript", "Tailwind CSS"],
-            "links": {
-                "demo": "",
-                "repository": ""
-            }
+            ]
         },
         {
-            "id": 2,
-            "color": "bg-yellow-400",
             "slug": "notes-react-app",
             "hook": "Capture your ideas. Access them anytime.",
             "title": "Written Notes Manager",
@@ -36,17 +27,9 @@
                 "REST API consumption",
                 "Relational database persistence",
                 "Client and server-side data validation"
-            ],
-            "role": ["Frontend", "backend"],
-            "stack": ["React", "Node.js", "Spring Boot", "MySQL"],
-            "links": {
-                "demo": "",
-                "repository": ""
-            }
+            ]
         },
         {
-            "id": 3,
-            "color": "bg-violet-950",
             "slug": "KOBE",
             "hook": "Track your money. Plan your financial future.",
             "title": "Personal Finance Manager",
@@ -57,17 +40,9 @@
                 "Structured income and expense tracking",
                 "Client-server architecture using REST API",
                 "Relational database persistence"
-            ],
-            "role": ["Frontend", "backend"],
-            "stack": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL"],
-            "links": {
-                "demo": "",
-                "repository": ""
-            }
+            ]
         },
         {
-            "id": 4,
-            "color": "bg-sky-500",
             "slug": "ecommerce-accessible",
             "hook": "Designed for everyone. No exceptions.",
             "title": "Space Ecommerce Experience",
@@ -77,17 +52,9 @@
                 "Full keyboard navigation support",
                 "Proper semantic HTML and ARIA usage",
                 "Optimized contrast and visual hierarchy"
-            ],
-            "role": ["Frontend"],
-            "stack": ["React", "HTML + CSS", "Figma"],
-            "links": {
-                "demo": "",
-                "repository": ""
-            }
+            ]
         },
         {
-            "id": 5,
-            "color": "bg-red-600",
             "slug": "SDDA",
             "hook": "Digitizing legal processes with structure and clarity.",
             "title": "Digital Child Support Management System",
@@ -97,13 +64,7 @@
                 "Structured legal information handling",
                 "Data integrity through relational database design",
                 "Full-stack architecture with clear responsibility separation"
-            ],
-            "role": ["Frontend", "backend"],
-            "stack": ["React", "Express", "PostgreSQL"],
-            "links": {
-                "demo": "",
-                "repository": ""
-            }
+            ]
         }
     ]
 }

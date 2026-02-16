@@ -1,13 +1,22 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Poster from "./Poster";
 import { useTranslation } from "react-i18next";
+import { projectsStatic } from "../../data/projects.data";
 import type { Project } from "../../models/types";
 
 function ProjectsPreview() {
     const { t } = useTranslation("projects");
     const [index, setIndex] = useState(0);
-    const projects = t("list", {returnObjects: true}) as Project[];
+
+    const projects = useMemo(() => {
+        return projectsStatic.map((project, index) => ({
+            ...project,
+            ...t(`list.${index}`, {returnObjects: true})
+        })) as Project[];
+    }, [t])
+
+
     const total = projects.length;
 
     function handleNext() {
