@@ -23,11 +23,19 @@ function ProjectsPreview() {
     };
 
     function getVisibleProjects() {
-        const prevIndex =
-            (index - 1 + projects.length) % projects.length;
+        const prevIndex = (index - 1 + projects.length) % projects.length;
         const nextIndex = (index + 1) % projects.length;
 
-        return [projects[prevIndex], projects[index], projects[nextIndex]];
+        return [
+            { project: projects[prevIndex], realIndex: prevIndex },
+            { project: projects[index], realIndex: index },
+            { project: projects[nextIndex], realIndex: nextIndex }
+        ];
+    }
+
+    function handleClick(index: number) {
+        setIndex(index);
+        console.log(index);
     }
 
     const visibleProjects = getVisibleProjects();
@@ -39,15 +47,15 @@ function ProjectsPreview() {
                 <h3 className="text-3xl font-bold text-center p-5">Estación: Mis Proyectos</h3>
             </div>
             <div className="w-full h-full flex flex-row place-content-center items-center">
-                <button onClick={handlePrevious} className="absolute left-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl">
+                <button onClick={handlePrevious} className="absolute left-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl z-5">
                     <FaArrowLeft />
                 </button>
                 <div className="flex gap-20 place-content-center items-center">
-                    {visibleProjects.map((project, index) => (
-                        <Poster key={index} project={project} />
+                    {visibleProjects.map(({project, realIndex}, index) => (
+                        <Poster key={index} project={project} onClick={() => handleClick(realIndex)} />
                     ))}
                 </div>
-                <button onClick={handleNext} className="absolute right-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl">
+                <button onClick={handleNext} className="absolute right-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl z-5">
                     <FaArrowRight />
                 </button>
             </div>

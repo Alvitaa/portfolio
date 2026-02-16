@@ -5,12 +5,14 @@ interface Props {
         color: string;
         subtitle: string;
     },
+    onClick: () => void,
 }
 
-function Poster({ project }: Props) {
+function Poster({ project, onClick }: Props) {
     return (
         <div
-            className="min-w-2/3 max-w-2/3 h-[60vh] p-5 border-5"
+            className="min-w-2/3 max-w-2/3 h-[60vh] p-5 border-5 hover:scale-105 duration-300"
+            onClick={() => onClick()}
         >
             <div className={`h-56 ${project.color}`} />
 
