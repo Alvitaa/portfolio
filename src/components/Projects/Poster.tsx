@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import type { Project } from "../../models/types";
 import { FaCode, FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import ImageModal from "./ImageModal";
 
 interface Props {
     project: Project;
@@ -8,9 +10,27 @@ interface Props {
 
 function Poster({ project }: Props) {
     const { t } = useTranslation("projects");
-    console.log(project);
+    const [isOpen, setIsOpen] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    return (
+    const openModal = (index: number) => {
+        setCurrentIndex(index);
+        setIsOpen(true);
+    };
+
+    const nextImage = () => {
+        setCurrentIndex((prev) =>
+            prev === project.images.length - 1 ? 0 : prev + 1
+        );
+    };
+
+    const prevImage = () => {
+        setCurrentIndex((prev) =>
+            prev === 0 ? project.images.length - 1 : prev - 1
+        );
+    };
+
+    return (<>
         <div
             className="flex flex-row min-w-1/2 max-w-1/2 h-[60vh] border-5 hover:scale-115 duration-300 shadow-l"
         >
@@ -38,15 +58,27 @@ function Poster({ project }: Props) {
                 </div>
             </div>
             <div className={`flex-1 flex flex-col place-content-center items-center ${project.color} p-3 mr-5 gap-4`}>
-                {project.images.map((url) => (
+                {project.images.slice(0, 3).map((url, index) => (
                     <img
                         src={url}
                         alt={t("view")}
-                        className={`w-fit ${project.type === "web" ? "h-fit" : "h-full"} object-contain bg-cover shadow-s hover:scale-130 duration-300`}
+                        onClick={() => openModal(index)}
+                        className={`w-fit ${project.type === "web" ? "h-fit" : "h-full"} object-contain bg-cover shadow-s`}
                     />
                 ))}
             </div>
         </div>
+        {isOpen && (
+            <ImageModal
+                images={project.images}
+                currentIndex={currentIndex}
+                onClose={() => setIsOpen(false)}
+                onNext={nextImage}
+                onPrev={prevImage}
+            />
+        )
+        }
+    </>
     );
 }
 
