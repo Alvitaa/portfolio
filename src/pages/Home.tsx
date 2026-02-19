@@ -1,4 +1,5 @@
 import About from "../components/About/About";
+import Announcement from "../components/Announcement/Announcement";
 import Beam from "../components/Beam/Beam";
 import Footer from "../components/Footer/Footer";
 import PreFooter from "../components/Footer/PreFooter";
@@ -14,6 +15,7 @@ function Home () {
         <Nav />
         <Hero />
         <About />
+        <Announcement />
         <ProjectsPreview />
         <PreFooter />
         <Footer />
