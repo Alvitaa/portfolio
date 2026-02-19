@@ -22,6 +22,7 @@
       "tagline": "Tristemente, este es el final :(",
       "contact": "Pero puedes chequear mis redes sociales, envíame un mensaje si quieres contactarme!",
       "madeBy": "Hecho por {{name}}",
-      "stack": "Este sitio utiliza React + Vite, Tailwind CSS e i18n"
+      "stack": "Este sitio utiliza React + Vite, Tailwind CSS e i18n",
+      "copied": "Email copiado al portapapeles"
     }
 }

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import CopyEmailButton from "./CopyEmailButton";
 
 function Footer () {
     const {t} = useTranslation("home");
@@ -10,7 +11,7 @@ function Footer () {
             <ul>
                 <li className="underline"><a href="https://www.linkedin.com/in/jalvalarios/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li className="underline"><a href="https://github.com/Alvitaa" target="_blank" rel="noopener noreferrer">Github</a></li>
-                <li className="underline">Email</li>
+                <li><CopyEmailButton user="jalvalarios" domain="gmail.com"/></li>
             </ul>
         </div>
         <div className="text-center font-semibold">

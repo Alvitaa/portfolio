@@ -29,7 +29,7 @@ function Announcement() {
 
     return (
         <div className="w-full flex items-center place-content-center p-10 bg-main text-white text-md">
-            <p className= {`flex items-center text-center h-12 font-medium transition-opacity duration-500 ${ fade ? "opacity-100" : "opacity-0"}`}>{t(`facts.${index}`)}</p>
+            <p className= {`flex items-center text-center h-12 font-medium transition-opacity duration-500 ${ fade ? "opacity-100" : "opacity-0"}`}>{t("announcement").toUpperCase()}: {t(`facts.${index}`)}</p>
         </div>
     )
 }
