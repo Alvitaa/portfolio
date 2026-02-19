@@ -30,42 +30,37 @@ export default function ImageModal({
 
     return (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-
             <div
                 className="absolute inset-0"
                 onClick={onClose}
             />
-
-            <div className="relative max-w-5xl w-[90%] z-10">
-                <button
-                    onClick={onClose}
-                    className="absolute -top-10 right-0 text-white text-2xl"
-                >
-                    <FaTimes />
-                </button>
-
+            <button
+                onClick={onClose}
+                className="absolute top-12 right-20 text-white text-3xl"
+            >
+                <FaTimes />
+            </button>
+            <div className="relative flex flex-row place-content-around gap-2 max-w-[90%] z-10">
+                {images.length > 1 && (
+                    <button
+                        onClick={onPrev}
+                        className="flex-1 bg-neutral-200 text-3xl cursor-pointer hover:bg-neutral-300"
+                    >
+                        <FaChevronLeft />
+                    </button>
+                )}
                 <img
                     src={images[currentIndex]}
                     alt="Project preview"
-                    className="w-full max-h-[80vh] object-contain rounded-lg"
+                    className="w-full max-h-[80vh] min-w-[75vw] max-w-[75vw] object-contain"
                 />
-
                 {images.length > 1 && (
-                    <>
-                        <button
-                            onClick={onPrev}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 text-white text-3xl px-4"
-                        >
-                            <FaChevronLeft />
-                        </button>
-
-                        <button
-                            onClick={onNext}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 text-white text-3xl px-4"
-                        >
-                            <FaChevronRight />
-                        </button>
-                    </>
+                    <button
+                        onClick={onNext}
+                        className="flex-1 bg-neutral-200 text-3xl cursor-pointer hover:bg-neutral-300"
+                    >
+                        <FaChevronRight />
+                    </button>
                 )}
             </div>
         </div>
