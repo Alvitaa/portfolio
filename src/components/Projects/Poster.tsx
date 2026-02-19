@@ -60,6 +60,7 @@ function Poster({ project }: Props) {
             <div className={`flex-1 flex flex-col place-content-center items-center ${project.color} p-3 mr-5 gap-4`}>
                 {project.images.slice(0, 3).map((url, index) => (
                     <img
+                        key={index}
                         src={url}
                         alt={t("view")}
                         onClick={() => openModal(index)}
