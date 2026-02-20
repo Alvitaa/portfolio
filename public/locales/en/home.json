@@ -23,6 +23,7 @@
       "contact": "But you can check my socials, feel free to message if you want to reach out!",
       "madeBy": "Made by {{name}}",
       "stack": "This website uses React + Vite, Tailwind CSS and i18n",
-      "copied": "Copied email to clipboard"
+      "copied": "Copied email to clipboard",
+      "extra": "Extra credits"
     }
 }

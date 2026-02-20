@@ -3,6 +3,7 @@ import type { Project } from "../../models/types";
 import { FaCode, FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import ImageModal from "./ImageModal";
+import Modal from "../Modal/Modal";
 
 interface Props {
     project: Project;
@@ -70,13 +71,14 @@ function Poster({ project }: Props) {
             </div>
         </div>
         {isOpen && (
-            <ImageModal
-                images={project.images}
-                currentIndex={currentIndex}
-                onClose={() => setIsOpen(false)}
-                onNext={nextImage}
-                onPrev={prevImage}
-            />
+            <Modal onClose={() => setIsOpen(false)}>
+                <ImageModal
+                    images={project.images}
+                    currentIndex={currentIndex}
+                    onNext={nextImage}
+                    onPrev={prevImage}
+                />
+            </Modal>
         )
         }
     </>

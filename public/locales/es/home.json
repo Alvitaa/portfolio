@@ -23,6 +23,7 @@
       "contact": "Pero puedes chequear mis redes sociales, envíame un mensaje si quieres contactarme!",
       "madeBy": "Hecho por {{name}}",
       "stack": "Este sitio utiliza React + Vite, Tailwind CSS e i18n",
-      "copied": "Email copiado al portapapeles"
+      "copied": "Email copiado al portapapeles",
+      "extra": "Créditos extra"
     }
 }
