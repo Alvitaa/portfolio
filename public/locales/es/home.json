@@ -2,7 +2,9 @@
     "nav": {
         "hero": "inicio",
         "about": "sobre mi",
-        "projects": "proyectos"
+        "projects": "proyectos",
+        "language": "Alternar idioma",
+        "love": "Me encantan los sistemas de trenes!"
     },
     "hero": {
         "presentation": "Hola! Mi nombre es",
@@ -23,7 +25,13 @@
       "contact": "Pero puedes chequear mis redes sociales, envíame un mensaje si quieres contactarme!",
       "madeBy": "Hecho por {{name}}",
       "stack": "Este sitio utiliza React + Vite, Tailwind CSS e i18n",
+      "copy": "Copiar email",
       "copied": "Email copiado al portapapeles",
-      "extra": "Créditos extra"
+      "extra": "Créditos extra",
+      "warning": {
+        "title": "No entrar a las vías",
+        "warning": "Advertencia",
+        "description": "No invadir la vía férrea"
+      }
     }
 }

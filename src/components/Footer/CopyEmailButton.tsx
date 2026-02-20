@@ -34,7 +34,8 @@ export default function CopyEmailButton({ user, domain }: Props) {
     return (
         <button
             onClick={handleCopy}
-            className={"flex flex-row text-white transition-all duration-300 ease-in-out"}
+            className={"flex flex-row text-white transition-all duration-300 ease-in-out cursor-pointer"}
+            title={t("footer.copy")}
         >
             <span className="underline">
                 Email

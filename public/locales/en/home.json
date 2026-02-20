@@ -2,7 +2,9 @@
     "nav": {
         "hero": "home",
         "about": "about",
-        "projects": "projects"
+        "projects": "projects",
+        "language": "Toggle language",
+        "love": "I love trains systems!"
     },
     "hero": {
         "presentation": "Hi! My name is",
@@ -23,7 +25,13 @@
       "contact": "But you can check my socials, feel free to message if you want to reach out!",
       "madeBy": "Made by {{name}}",
       "stack": "This website uses React + Vite, Tailwind CSS and i18n",
+      "copy": "Copy email",
       "copied": "Copied email to clipboard",
-      "extra": "Extra credits"
+      "extra": "Extra credits",
+      "warning": {
+        "title": "Keep off the track",
+        "warning": "Warning",
+        "description": "Do not trespass on the railway"
+      }
     }
 }

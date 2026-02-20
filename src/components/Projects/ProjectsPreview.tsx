@@ -12,7 +12,7 @@ function ProjectsPreview() {
     const projects = useMemo(() => {
         return projectsStatic.map((project, index) => ({
             ...project,
-            ...t(`list.${index}`, {returnObjects: true})
+            ...t(`list.${index}`, { returnObjects: true })
         })) as Project[];
     }, [t])
 
@@ -38,15 +38,22 @@ function ProjectsPreview() {
 
     return (
         <section id="projects" className="relative h-[95vh] max-h-screen pt-15 flex flex-col items-center place-content-start overflow-hidden">
-            <div className="w-full border-neutral-50 border-t border-b shadow-m">
-                <div className="w-full h-5 bg-main"></div>
-                <h3 className="text-3xl font-bold text-center p-5">{t("title")}</h3>
+            <div className="w-full border-neutral-50 border-t border-b shadow-m cursor-default">
+                <div className="w-full h-5 bg-main" />
+                <h3 className="w-full flex flex-row items-center gap-8 place-content-center text-3xl font-bold text-center p-5">
+                    <p className="flex items-center justify-center rounded-md border-3 text-base px-2 pr-2.5 font-black">1</p>
+                    {t("title")}
+                    <div className="flex flex-row gap-2">
+                        <p className="flex items-center justify-center bg-green-700 text-white rounded-full text-base h-8 w-8" title="Frontend">F</p>
+                        <p className="flex items-center justify-center bg-blue-700 text-white rounded-full text-base h-8 w-8" title="Backend">B</p>
+                    </div>
+                </h3>
             </div>
             <div className="w-full h-full flex flex-row place-content-center items-center">
                 <button onClick={handlePrevious} className="absolute left-20 bg-white rounded-full p-2 shadow-s font-bold text-2xl z-5">
                     <FaArrowLeft />
                 </button>
-                <div className="w-full flex flex-row gap-40 place-content-center">
+                <div className="w-full flex flex-row gap-[10vw] place-content-center">
                     {visibleProjects.map((project, index) => (
                         <Poster key={index} project={project} />
                     )

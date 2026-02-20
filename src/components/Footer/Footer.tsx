@@ -14,7 +14,7 @@ function Footer() {
 
     return (
         <>
-            <footer className="bg-black text-white text-md p-5 flex flex-col place-content-between gap-10">
+            <footer className="bg-main text-white text-md p-5 flex flex-col place-content-between gap-10">
                 <div className="border-l-3 pl-5 border-white leading-10">
                     <h3 className="text-3xl font-semibold">{t("footer.tagline")}</h3>
                     <p>{t("footer.contact")}</p>
