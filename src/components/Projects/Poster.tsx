@@ -33,7 +33,7 @@ function Poster({ project }: Props) {
 
     return (<>
         <div
-            className="flex flex-row min-w-1/2 max-w-1/2 h-[60vh] border-5 hover:scale-115 duration-300 shadow-l"
+            className="flex flex-row h-[60vh] border-5 hover:scale-115 duration-300 shadow-l"
         >
             <div className="max-w-2/3 p-5 pr-10 -mr-5 flex flex-col gap-5 place-content-between">
                 <div className="border-b border-neutral-400 pb-3">

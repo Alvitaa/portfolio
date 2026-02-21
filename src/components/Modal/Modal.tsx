@@ -1,4 +1,5 @@
 import { useEffect, type PropsWithChildren } from "react";
+import { createPortal } from "react-dom";
 import { FaTimesCircle } from "react-icons/fa";
 
 interface ModalProps extends PropsWithChildren {
@@ -23,9 +24,9 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
             window.removeEventListener("keydown", handleKey);
             document.body.style.overflow = "";
         };
-    }, [onClose])
+    }, [onClose, isOpen])
 
-    return (
+    return createPortal(
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
             <div
                 className="absolute inset-0"
@@ -38,7 +39,8 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
                 <FaTimesCircle />
             </button>
             {children}
-        </div>
+        </div>,
+        document.body
     );
 }
 
