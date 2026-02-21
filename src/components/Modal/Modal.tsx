@@ -2,17 +2,27 @@ import { useEffect, type PropsWithChildren } from "react";
 import { FaTimesCircle } from "react-icons/fa";
 
 interface ModalProps extends PropsWithChildren {
+    isOpen: boolean;
     onClose: () => void;
 }
 
-function Modal({ onClose, children }: ModalProps) {
+function Modal({ isOpen, onClose, children }: ModalProps) {
     useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
         const handleKey = (e: KeyboardEvent) => {
             if (e.key === "Escape") onClose();
         };
 
         window.addEventListener("keydown", handleKey);
-        return () => window.removeEventListener("keydown", handleKey);
+        return () => {
+            window.removeEventListener("keydown", handleKey);
+            document.body.style.overflow = "";
+        };
     }, [onClose])
 
     return (

@@ -1,5 +1,5 @@
 .beam {
-    z-index: 1000;
+    z-index: 49;
     will-change:
         transform,
         mask-image,

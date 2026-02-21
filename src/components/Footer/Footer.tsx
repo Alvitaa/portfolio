@@ -3,6 +3,7 @@ import CopyEmailButton from "./CopyEmailButton";
 import { useState } from "react";
 import CreditsModal from "./CreditsModal";
 import Modal from "../Modal/Modal";
+import { data } from "../../data/personal.data";
 
 function Footer() {
     const { t } = useTranslation("home");
@@ -19,9 +20,9 @@ function Footer() {
                     <h3 className="text-3xl font-semibold">{t("footer.tagline")}</h3>
                     <p>{t("footer.contact")}</p>
                     <ul>
-                        <li className="underline"><a href="https://www.linkedin.com/in/jalvalarios/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                        <li className="underline"><a href="https://github.com/Alvitaa" target="_blank" rel="noopener noreferrer">Github</a></li>
-                        <li><CopyEmailButton user="jalvalarios" domain="gmail.com" /></li>
+                        <li className="underline"><a href={data.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li className="underline"><a href={data.github} target="_blank" rel="noopener noreferrer">Github</a></li>
+                        <li><CopyEmailButton user={data.user} domain={data.domain} /></li>
                     </ul>
                 </div>
                 <div className="text-center font-semibold">
@@ -31,7 +32,7 @@ function Footer() {
                 </div>
             </footer>
             {isOpen &&
-                <Modal onClose={() => setIsOpen(false)}>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <CreditsModal />
                 </Modal>
             }

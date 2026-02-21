@@ -29,7 +29,7 @@ function Nav() {
 
     return (
         <nav id="nav" className={`${isHome ? "sticky" : "relative"} top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled || !isHome ? "bg-white" : "bg-transparent backdrop-blur-md"}`}>
-            <FaTrainSubway className="absolute left-5" title={t("nav.love")}/>
+            <FaTrainSubway className="text-xl absolute left-5" title={t("nav.love")}/>
             <div className="absolute left-1/2 -translate-x-1/2 flex flex-row place-content-center gap-10 flex-1">
                 {location.pathname === "/" ?
                     <>
@@ -57,7 +57,7 @@ function Nav() {
                 onClick={() => toggleLanguage()}
                 title={t("nav.language")}
             >
-                <h3 className={i18n.language==="en"?"underline":""}>EN </h3>|<h3 className={i18n.language==="es"?"underline":""}> ES</h3>
+                <h3 className={i18n.language==="en"?"underline":"font-medium"}>EN </h3>|<h3 className={i18n.language==="es"?"underline":"font-medium"}> ES</h3>
             </div>
         </nav>
     )

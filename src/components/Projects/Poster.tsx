@@ -14,18 +14,18 @@ function Poster({ project }: Props) {
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const openModal = (index: number) => {
+    function openModal (index: number) {
         setCurrentIndex(index);
         setIsOpen(true);
     };
 
-    const nextImage = () => {
+    function nextImage () {
         setCurrentIndex((prev) =>
             prev === project.images.length - 1 ? 0 : prev + 1
         );
     };
 
-    const prevImage = () => {
+    function prevImage () {
         setCurrentIndex((prev) =>
             prev === 0 ? project.images.length - 1 : prev - 1
         );
@@ -71,7 +71,7 @@ function Poster({ project }: Props) {
             </div>
         </div>
         {isOpen && (
-            <Modal onClose={() => setIsOpen(false)}>
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                 <ImageModal
                     images={project.images}
                     currentIndex={currentIndex}

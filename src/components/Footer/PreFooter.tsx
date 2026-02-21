@@ -6,7 +6,7 @@ function PreFooter() {
     const { t } = useTranslation("home");
 
     return (
-        <div className="w-full">
+        <div className="w-full cursor-default">
             <div className="w-full h-5 bg-yellow-500" />
             <div className="w-full bg-neutral-700 flex flex-row place-content-center p-5 pb-10">
                 <div className="bg-neutral-200 font-extrabold text-lg flex items-center gap-2 p-3">
