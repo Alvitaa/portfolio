@@ -34,7 +34,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
             />
             <button
                 onClick={onClose}
-                className="absolute top-10 md:top-15 right-5 md:right-20 text-white text-3xl"
+                className="absolute top-10 md:top-15 right-5 lg:right-20 text-white text-3xl"
             >
                 <FaTimesCircle />
             </button>

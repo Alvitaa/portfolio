@@ -26,23 +26,23 @@ export default function ImageModal({
     }, [onNext, onPrev]);
 
     return (
-        <div className="relative flex flex-col place-content-around gap-2 w-full z-10">
+        <div className="relative flex flex-col place-content-around gap-2 w-fit lg:w-5/6 z-10 lg:p-5">
             <img
                 src={images[currentIndex]}
                 alt="Project preview"
-                className="w-full max-h-[80vh] w-full object-contain"
+                className="w-full max-h-[80vh] object-contain"
             />
             {images.length > 1 && (
                 <div className="flex gap-2 w-full">
                     <button
                         onClick={onPrev}
-                        className="flex-1 flex place-content-center bg-neutral-200 text-xl p-1 md:text-3xl cursor-pointer hover:bg-neutral-300"
+                        className="flex-1 flex place-content-center bg-neutral-200 text-xl p-1 lg:text-3xl cursor-pointer hover:bg-neutral-300"
                     >
                         <FaChevronLeft />
                     </button>
                     <button
                         onClick={onNext}
-                        className="flex-1 flex place-content-center bg-neutral-200 text-xl p-1 md:text-3xl cursor-pointer hover:bg-neutral-300"
+                        className="flex-1 flex place-content-center bg-neutral-200 text-xl p-1 lg:text-3xl cursor-pointer hover:bg-neutral-300"
                     >
                         <FaChevronRight />
                     </button>
