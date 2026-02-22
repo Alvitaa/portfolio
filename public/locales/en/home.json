@@ -8,7 +8,7 @@
     },
     "hero": {
         "presentation": "Hi! My name is",
-        "profession": "I'm a Frontend developer with experience in fullstack apps development",
+        "profession": "Frontend developer with experience in fullstack apps development",
         "tagline": "Building interfaces that connect users and systems"
     },
     "about": {
@@ -18,7 +18,7 @@
           "Currently, I'm looking to begin my professional journey as a frontend developer, strengthening my technical skills and gaining experience by participating in impactful projects.",
           "This portfolio is inspired by train line systems and their stations, which I find fascinating because of their logic, organization, and efficiency. These are qualities I consider fundamental in developing good software."
         ],
-        "signature": "Written by {{name}} - Frontend developer"
+        "signature": "{{name}} - Frontend developer"
     },
     "footer": {
       "tagline": "Sadly, this is the end :(",

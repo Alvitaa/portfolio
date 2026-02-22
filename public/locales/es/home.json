@@ -8,7 +8,7 @@
     },
     "hero": {
         "presentation": "Hola! Mi nombre es",
-        "profession": "Soy un desarrollador Frontend con experiencia en el desarrollo de aplicaciones Fullstack",
+        "profession": "Desarrollador Frontend con experiencia en el desarrollo de aplicaciones Fullstack",
         "tagline": "Construyendo interfaces que conectan usuarios con sistemas."
     },
     "about": {
@@ -18,7 +18,7 @@
         "Actualmente busco desarrollarme profesionalmente como frontend, fortaleciendo mis habilidades técnicas y ganando experiencia participando en proyectos de impacto.",
         "Este portafolio está inspirado en los sistemas de líneas de trenes y sus estaciones, que me resultan fascinantes por su lógica, organización y eficiencia, cualidades que considero fundamentales en el desarrollo de buen software."
       ],
-      "signature": "Escrito por {{name}} - Desarrollador Frontend"
+      "signature": "{{name}} - Desarrollador Frontend"
     },
     "footer": {
       "tagline": "Tristemente, este es el final :(",
