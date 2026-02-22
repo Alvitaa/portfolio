@@ -3,7 +3,8 @@ import type { ProjectStatic } from "../models/types";
 export const projectsStatic: ProjectStatic[] = [
     {
         "id": 1,
-        "color": "bg-green-500",
+        "color": "bg-green-600",
+        "textColor": "text-white",
         "type": "web",
         "role": ["Frontend"],
         "stack": ["Angular", "TypeScript", "Tailwind CSS"],
@@ -20,6 +21,7 @@ export const projectsStatic: ProjectStatic[] = [
     {
         "id": 2,
         "color": "bg-yellow-400",
+        "textColor": "text-black",
         "type": "web",
         "role": ["Frontend", "Backend"],
         "stack": ["React", "Node.js", "Spring Boot", "MySQL"],
@@ -36,6 +38,7 @@ export const projectsStatic: ProjectStatic[] = [
     {
         "id": 3,
         "color": "bg-violet-950",
+        "textColor": "text-white",
         "type": "mobile",
         "role": ["Frontend", "Backend"],
         "stack": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL"],
@@ -50,6 +53,7 @@ export const projectsStatic: ProjectStatic[] = [
     {
         "id": 4,
         "color": "bg-sky-500",
+        "textColor": "text-black",
         "type": "web",
         "role": ["Frontend"],
         "stack": ["React", "HTML + CSS", "Figma"],
@@ -66,6 +70,7 @@ export const projectsStatic: ProjectStatic[] = [
     {
         "id": 5,
         "color": "bg-red-600",
+        "textColor": "text-white",
         "type": "web",
         "role": ["Frontend", "Backend"],
         "stack": ["React", "Express", "PostgreSQL"],

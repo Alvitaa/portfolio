@@ -4,12 +4,13 @@
     "role_one": "Rol",
     "role_other": "Roles",
     "view": "Vista de proyecto",
+    "gallery": "Mira la galería",
     "list": [
         {
             "slug": "urban-transport-dashboard",
             "hook": "Convierte datos en métricas claras y visualiza el movimiento urbano.",
             "title": "Urban Transport Dashboard",
-            "description": "Dashboard web orientado al análisis de datos de líneas de tren, permitiendo calcular y visualizar métricas clave como flujo diario de pasajeros, demanda por líneas, e intervalos de llegada mediante tablas y gráficos interactivos.",
+            "description": "Dashboard web responsive orientado al análisis de datos de líneas de tren, permitiendo calcular y visualizar métricas clave como flujo diario de pasajeros, demanda por líneas, e intervalos de llegada mediante tablas y gráficos interactivos.",
             "highlights": [
                 "Arquitectura basada en componentes reutilizables",
                 "Visualización estructurada de datos complejos",

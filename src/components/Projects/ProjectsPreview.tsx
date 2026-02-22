@@ -15,7 +15,7 @@ function ProjectsPreview() {
     }, [t])
 
     return (
-        <section id="projects" className="relative h-[95vh] max-h-screen pt-15 flex flex-col items-center place-content-start overflow-hidden">
+        <section id="projects" className="relative h-[95vh pt-15 pb-5 md:pb-0 flex flex-col items-center place-content-start overflow-hidden">
             <div className="w-full border-neutral-50 border-t border-b shadow-m cursor-default">
                 <div className="w-full h-3 md:h-5 bg-main" />
                 <h3 className="w-full flex flex-row items-center gap-5 md:gap-8 place-content-center text-xl md:text-3xl font-bold text-center p-5">
@@ -27,7 +27,7 @@ function ProjectsPreview() {
                     </div>
                 </h3>
             </div>
-            <Carousel projects={projects}/>
+            <Carousel projects={projects} doInterval={false}/>
         </section>
     );
 }

@@ -23,31 +23,32 @@ export default function ImageModal({
 
         window.addEventListener("keydown", handleKey);
         return () => window.removeEventListener("keydown", handleKey);
-    }, [ onNext, onPrev]);
+    }, [onNext, onPrev]);
 
     return (
-            <div className="relative flex flex-row place-content-around gap-2 max-w-[90%] z-10">
-                {images.length > 1 && (
+        <div className="relative flex flex-col place-content-around gap-2 w-full z-10">
+            <img
+                src={images[currentIndex]}
+                alt="Project preview"
+                className="w-full max-h-[80vh] w-full object-contain"
+            />
+            {images.length > 1 && (
+                <div className="flex gap-2 w-full">
                     <button
                         onClick={onPrev}
-                        className="flex-1 bg-neutral-200 text-3xl cursor-pointer hover:bg-neutral-300"
+                        className="flex-1 flex place-content-center bg-neutral-200 text-xl p-1 md:text-3xl cursor-pointer hover:bg-neutral-300"
                     >
                         <FaChevronLeft />
                     </button>
-                )}
-                <img
-                    src={images[currentIndex]}
-                    alt="Project preview"
-                    className="w-full max-h-[80vh] min-w-[75vw] max-w-[75vw] object-contain"
-                />
-                {images.length > 1 && (
                     <button
                         onClick={onNext}
-                        className="flex-1 bg-neutral-200 text-3xl cursor-pointer hover:bg-neutral-300"
+                        className="flex-1 flex place-content-center bg-neutral-200 text-xl p-1 md:text-3xl cursor-pointer hover:bg-neutral-300"
                     >
                         <FaChevronRight />
                     </button>
-                )}
-            </div>
+
+                </div>
+            )}
+        </div>
     );
 }

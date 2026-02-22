@@ -4,12 +4,13 @@
     "role_one": "Role",
     "role_other": "Roles",
     "view": "Vista de proyecto",
+    "gallery": "Check gallery",
     "list": [
         {
             "slug": "urban-transport-dashboard",
             "hook": "Turn data into clear metrics and understand urban mobility.",
             "title": "Urban Transport Dashboard",
-            "description": "Web dashboard focused on analyzing train line data, enabling the calculation and visualization of key metrics such as passenger daily flow, lines demand, and arrival intervals through structured tables and interactive charts.",
+            "description": "Responsive web dashboard focused on analyzing train line data, enabling the calculation and visualization of key metrics such as passenger daily flow, lines demand, and arrival intervals through structured tables and interactive charts.",
             "highlights": [
                 "Reusable component-based architecture",
                 "Structured visualization of complex datasets",
