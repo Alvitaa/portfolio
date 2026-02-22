@@ -2,11 +2,11 @@ import { useEffect, useMemo, useState } from "react";
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 426);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 426);
+            setIsMobile(window.innerWidth <= 850);
         };
 
         window.addEventListener("resize", handleResize);

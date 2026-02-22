@@ -8,7 +8,3 @@
     will-change: transform;
     pointer-events: none;
 }
-
-.beam-edge {
-  will-change: filter;
-}

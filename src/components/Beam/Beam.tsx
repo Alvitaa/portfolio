@@ -55,17 +55,17 @@ const Beam: React.FC = () => {
     }, []);
 
     return (
-        <div ref={beamRef} className="beam bg-neutral-400 absolute top-0 left-1/2 w-full h-80 pointer-events-none text-3xl">
-            <div className="flex flex-row place-content-between blur-[2px] h-full items-center text-9xl p-5">
-                <div className="relative h-full">
-                    <img src={Graffiti} className="h-40 relative top-10 left-5 rotate-5" />
-                    <img src={OwLogo} className="h-30 absolute top-30 left-60 -rotate-12" />
+        <div ref={beamRef} className="beam bg-neutral-400 absolute top-0 left-1/2 w-full h-40 md:h-64 lg:h-80 pointer-events-none text-3xl">
+            <div className="flex flex-row place-content-between blur-[1px] md:blur-[2px] h-full items-center text-9xl p-5">
+                <div className="relative h-full w-1/2">
+                    <img src={Graffiti} className="absolute top-1/6 md:left-5 rotate-5 h-12 md:h-24 lg:h-32" />
+                    <img src={OwLogo} className="absolute top-1/2 left-15 md:left-40 h-12 md:h-20 lg:h-24 -rotate-12" />
                 </div>
-                <div className="relative h-full">
-                    <FaReact className="text-cyan-400 absolute top-8 right-62 text-9xl -rotate-12" />
-                    <VscVscode className="text-blue-600 absolute top-35 right-40 text-9xl rotate-8" />
-                    <img src={ViteLogo} className="h-28 relative top-0 right-30 text-9xl rotate-10" />
-                    <RiTailwindCssFill className="text-cyan-300 absolute top-20 right-0 text-9xl rotate-12" />
+                <div className="relative h-full w-1/2">
+                    <FaReact className="text-cyan-400 absolute top-1/5 right-0 text-5xl md:text-8xl lg:text-9xl -rotate-12" />
+                    <VscVscode className="text-blue-600 absolute bottom-0 right-2/11 md:right-3/13 text-5xl md:text-8xl lg:text-9xl rotate-8" />
+                    <img src={ViteLogo} className="absolute top-0 right-3/9 md:right-4/15 h-12 md:h-22 lg:h-28 rotate-10" />
+                    <RiTailwindCssFill className="text-cyan-300 absolute top-4/11 md:top-4/13 right-7/12 md:right-6/12 text-5xl md:text-8xl lg:text-9xl rotate-12" />
                 </div>
             </div>
         </div>
