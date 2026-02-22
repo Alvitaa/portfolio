@@ -17,13 +17,13 @@ function ProjectsPreview() {
     return (
         <section id="projects" className="relative h-[95vh] max-h-screen pt-15 flex flex-col items-center place-content-start overflow-hidden">
             <div className="w-full border-neutral-50 border-t border-b shadow-m cursor-default">
-                <div className="w-full h-5 bg-main" />
-                <h3 className="w-full flex flex-row items-center gap-8 place-content-center text-3xl font-bold text-center p-5">
-                    <p className="flex items-center justify-center rounded-md border-3 text-base px-2 pr-2.5 font-black">1</p>
+                <div className="w-full h-3 md:h-5 bg-main" />
+                <h3 className="w-full flex flex-row items-center gap-5 md:gap-8 place-content-center text-xl md:text-3xl font-bold text-center p-5">
+                    <p className="flex items-center justify-center rounded-md border-3 text-sm md:text-base px-1.5 pr-2 md:px-2 md:pr-2.5 font-black">1</p>
                     {t("title")}
-                    <div className="flex flex-row gap-2">
+                    <div className="hidden flex-row gap-2 md:flex">
                         <p className="flex items-center justify-center bg-green-700 text-white rounded-full text-base h-8 w-8" title="Frontend">F</p>
-                        <p className="flex items-center justify-center bg-blue-700 text-white rounded-full text-base h-8 w-8" title="Backend">B</p>
+                        <p className="flex items-center justify-center bg-blue-800 text-white rounded-full text-base h-8 w-8" title="Backend">B</p>
                     </div>
                 </h3>
             </div>

@@ -28,8 +28,8 @@ function Announcement() {
     }, [facts.length])
 
     return (
-        <div className="w-full flex items-center place-content-center p-10 bg-main text-white text-md cursor-default">
-            <p className={`flex items-center text-center h-12 font-medium transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}>
+        <div className="w-full flex items-center place-content-center px-3 py-5 md:p-10 bg-main text-white text-sm md:text-base cursor-default">
+            <p className={`flex items-center text-center h-15 font-medium transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}>
                 {t("announcement").toUpperCase()}: {t(`facts.${index}`)}
             </p>
         </div>

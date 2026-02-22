@@ -15,17 +15,17 @@ function Footer() {
 
     return (
         <>
-            <footer className="bg-main text-white text-md p-5 flex flex-col place-content-between gap-10">
-                <div className="border-l-3 pl-5 border-white leading-10">
-                    <h3 className="text-3xl font-semibold">{t("footer.tagline")}</h3>
+            <footer className="bg-main text-white text-sm md:text-md p-5 flex flex-col place-content-between gap-10">
+                <div className="flex flex-col py-3 md:py-5 gap-3 md:gap-5 border-l-3 pl-5 border-white">
+                    <h3 className="text-2xl md:text-3xl font-semibold">{t("footer.tagline")}</h3>
                     <p>{t("footer.contact")}</p>
-                    <ul>
+                    <ul className="flex flex-col gap-3 md:gap-5">
                         <li className="underline"><a href={data.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                         <li className="underline"><a href={data.github} target="_blank" rel="noopener noreferrer">Github</a></li>
                         <li><CopyEmailButton user={data.user} domain={data.domain} /></li>
                     </ul>
                 </div>
-                <div className="text-center font-semibold">
+                <div className="flex flex-col gap-2 text-center font-semibold">
                     <p>{t("footer.madeBy", { name: "Juan Alva" })} - 2026</p>
                     <p>{t("footer.stack")}</p>
                     <p className="underline cursor-pointer" onClick={() => openModal()}>{t("footer.extra")}</p>

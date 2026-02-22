@@ -27,14 +27,14 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
     }, [onClose, isOpen])
 
     return createPortal(
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-5">
             <div
                 className="absolute inset-0"
                 onClick={onClose}
             />
             <button
                 onClick={onClose}
-                className="absolute top-12 right-20 text-white text-3xl"
+                className="absolute top-10 md:top-15 right-5 md:right-20 text-white text-3xl"
             >
                 <FaTimesCircle />
             </button>
