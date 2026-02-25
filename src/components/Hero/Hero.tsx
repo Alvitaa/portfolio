@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoNewspaper } from "react-icons/io5";
+//import { IoNewspaper } from "react-icons/io5";
 import { data } from "../../data/personal.data";
 import { useState } from "react";
 import NewsModal from "./NewsModal";
@@ -9,16 +9,15 @@ import Modal from "../Modal/Modal";
 function Hero() {
     const { t } = useTranslation("home");
     const [isOpen, setIsOpen] = useState(false);
-    const steps = 12;
 
-    function openModal () {
+    /* function openModal() {
         setIsOpen(true);
-    }
+    } */
 
     return (
-        <section id="hero" className="w-full flex flex-col">
+        <section id="hero" className="w-full flex flex-col -mb-[8%]">
             <div
-                className="relative bg-[url('/images/cloudy-sky.webp')] flex flex-row items-center -mt-10 py-25 pt-35 md:py-40 text-sm text-center bg-cover font-medium md:text-xl md:leading-10"
+                className="relative bg-[url('/images/cloudy-sky.webp')] flex flex-row items-center min-h-[80vh] h-[80vh] -mt-10 py-25 md:pt-15 text-sm text-center bg-cover font-medium md:text-xl md:leading-10"
             >
                 <div className="flex-1 p-2">
                     <h1 className="font-bold hidden md:inline md:leading-30 text-6xl lg:text-7xl">Juan José Alva Larios</h1>
@@ -37,7 +36,10 @@ function Hero() {
                     {/* <IoNewspaper onClick={() => openModal()}/> */}
                 </div>
             </div>
-            <div className="bg-[url('/images/stairs.png')] bg-cover bg-center -translate-y-[22%] h-screen w-full"/>
+            <div
+                id="stairs"
+                className="bg-[url('/images/stairs.png')] bg-cover bg-position-[20%_center] md:bg-center -translate-y-[22%] h-screen w-full"
+            />
             {isOpen &&
                 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <NewsModal />

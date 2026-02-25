@@ -12,7 +12,7 @@ void i18n
     supportedLngs: ["en", "es"],
     ns: ["common", "home"],
     defaultNS: "common",
-    backend: { loadPath: "/locales/{{lng}}/{{ns}}.json" },
+    backend: { loadPath: "/portfolio/locales/{{lng}}/{{ns}}.json" },
     detection: {
       order: ["querystring", "cookie", "localStorage", "navigator"],
       caches: ["localStorage", "cookie"]

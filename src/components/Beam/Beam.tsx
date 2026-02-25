@@ -16,22 +16,30 @@ const Beam: React.FC = () => {
     useEffect(() => {
         const onScroll = () => {
             const hero = document.getElementById("hero");
+            const stairs = document.getElementById("stairs");
             const nav = document.getElementById("nav");
             lastScroll.current = window.scrollY;
 
             if (!ticking.current) {
                 requestAnimationFrame(() => {
-                    if (!beamRef.current || !hero) return;
+                    if (!beamRef.current || !hero || !stairs) return;
 
                     const beamHeight = beamRef.current.offsetHeight;
                     const heroHeight = hero.offsetHeight;
-                    const navHeight = nav? nav.offsetHeight : 0;
-                    const travelDistance = heroHeight;
+                    const trueHeroHeight = heroHeight - heroHeight / 8;
+                    const navHeight = nav ? nav.offsetHeight : 0;
 
-                    const progress = Math.min(lastScroll.current / travelDistance, 1);
+                    const triggerPoint = stairs.offsetTop - stairs.offsetHeight / 8 - navHeight;
 
-                    const startY = heroHeight;
-                    const endY = heroHeight + navHeight - beamHeight;
+                    const scrollAfterTrigger = Math.max(scrollY - triggerPoint, 0);
+
+                    const maxScroll = trueHeroHeight + navHeight - beamHeight;
+                    const clampedScroll = Math.min(scrollAfterTrigger, maxScroll);
+
+                    const progress = Math.min(clampedScroll / maxScroll, 1);
+
+                    const startY = trueHeroHeight;
+                    const endY = trueHeroHeight + navHeight - beamHeight;
 
                     const currentY =
                         startY + (endY - startY) * progress;
@@ -55,7 +63,7 @@ const Beam: React.FC = () => {
     }, []);
 
     return (
-        <div ref={beamRef} className="beam bg-neutral-400 absolute top-0 left-1/2 w-full h-40 md:h-64 lg:h-80 pointer-events-none text-3xl">
+        <div ref={beamRef} className="beam bg-neutral-400 absolute top-0 left-1/2 w-full h-50 md:h-70 lg:h-80 pointer-events-none text-3xl">
             <div className="flex flex-row place-content-between blur-[1px] md:blur-[2px] h-full items-center text-9xl p-5">
                 <div className="relative h-full w-1/2">
                     <img src={Graffiti} className="absolute top-1/6 md:left-5 rotate-5 h-12 md:h-24 lg:h-32" />
