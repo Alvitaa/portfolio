@@ -7,7 +7,7 @@ import { FaTrainSubway } from "react-icons/fa6";
 function Nav() {
     const { t, i18n } = useTranslation("home");
     const [isScrolled, setIsScrolled] = useState(false);
-    const isHome = location.pathname === "/portfolio";
+    const isHome = location.pathname === "/portfolio/" || location.pathname === "/portfolio";
 
     useEffect(() => {
         const hero = document.getElementById("hero");
