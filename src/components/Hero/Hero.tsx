@@ -37,9 +37,7 @@ function Hero() {
                     {/* <IoNewspaper onClick={() => openModal()}/> */}
                 </div>
             </div>
-            {Array.from({ length: steps }).map((_, index) => (
-                <div key={index} className="w-full border-t-5 bg-gray-700 h-10"></div>
-            ))}
+            <div className="bg-[url('/images/stairs.png')] bg-cover bg-center -translate-y-[22%] h-screen w-full"/>
             {isOpen &&
                 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <NewsModal />
