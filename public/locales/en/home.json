@@ -1,4 +1,5 @@
 {
+    "title": "{{name}} - Portfolio",
     "nav": {
         "hero": "home",
         "about": "about",
