@@ -1,0 +1,38 @@
+{
+    "title": "{{name}} - Portafolio",
+    "nav": {
+        "hero": "inicio",
+        "about": "sobre mi",
+        "projects": "proyectos",
+        "language": "Alternar idioma",
+        "love": "Me encantan los sistemas de trenes!"
+    },
+    "hero": {
+        "presentation": "Hola! Mi nombre es",
+        "profession": "Desarrollador Frontend con experiencia en el desarrollo de aplicaciones Fullstack",
+        "tagline": "Construyendo interfaces que conectan usuarios con sistemas."
+    },
+    "about": {
+      "title": "Sobre mi",
+      "text": [
+        "Desde siempre me ha gustado el software y entender el cómo funcionan diversos sistemas detrás de las cosas que usamos a diario, lo que llevó a formarme como bachiller en Ingeniería de Sistemas.",
+        "Actualmente busco desarrollarme profesionalmente como frontend, fortaleciendo mis habilidades técnicas y ganando experiencia participando en proyectos de impacto.",
+        "Este portafolio está inspirado en los sistemas de líneas de trenes y sus estaciones, que me resultan fascinantes por su lógica, organización y eficiencia, cualidades que considero fundamentales en el desarrollo de buen software."
+      ],
+      "signature": "{{name}} - Desarrollador Frontend"
+    },
+    "footer": {
+      "tagline": "Tristemente, este es el final :(",
+      "contact": "Pero puedes chequear mis redes sociales, envíame un mensaje si quieres contactarme!",
+      "madeBy": "Hecho por {{name}}",
+      "stack": "Este sitio utiliza React + Vite, Tailwind CSS e i18n",
+      "copy": "Copiar email",
+      "copied": "Email copiado al portapapeles",
+      "extra": "Créditos extra",
+      "warning": {
+        "title": "No entrar a las vías",
+        "warning": "Advertencia",
+        "description": "No invadir la vía férrea"
+      }
+    }
+}

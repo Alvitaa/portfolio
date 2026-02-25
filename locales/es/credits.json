@@ -1,0 +1,14 @@
+{
+    "title": "Créditos",
+    "developer": "Desarrollador",
+    "fonts": "Fuentes",
+    "images": {
+        "title": "Imágenes e Iconos",
+        "sky": "Imagen de cielo",
+        "stair": "Render de escaleras",
+        "gravel": "Imagen de grava",
+        "peru": "SVG - Bandera de Peru",
+        "ow": "SVG - Logo de Overwatch"
+    },
+    "additional": "Dependencias Adicionales"
+}

@@ -1,0 +1,71 @@
+{
+    "title": "My Projects",
+    "project": "Project",
+    "role_one": "Role",
+    "role_other": "Roles",
+    "view": "Vista de proyecto",
+    "gallery": "Check gallery",
+    "list": [
+        {
+            "slug": "urban-transport-dashboard",
+            "hook": "Turn data into clear metrics and understand urban mobility.",
+            "title": "Urban Transport Dashboard",
+            "description": "Responsive web dashboard focused on analyzing train line data, enabling the calculation and visualization of key metrics such as passenger daily flow, lines demand, and arrival intervals through structured tables and interactive charts.",
+            "highlights": [
+                "Reusable component-based architecture",
+                "Structured visualization of complex datasets",
+                "Responsive design across multiple devices",
+                "Scalable and maintainable project structure"
+            ]
+        },
+        {
+            "slug": "notes-react-app",
+            "hook": "Capture your ideas. Access them anytime.",
+            "title": "Written Notes Manager",
+            "description": "Full-stack web application for creating and managing persistent notes, implementing complete CRUD operations within a client-server architecture.",
+            "highlights": [
+                "Clear separation between frontend and backend",
+                "REST API consumption",
+                "Relational database persistence",
+                "Client and server-side data validation"
+            ]
+        },
+        {
+            "slug": "KOBE",
+            "hook": "Track your money. Plan your financial future.",
+            "title": "KOBEY - Personal Finance Manager",
+            "description": "Mobile application built with Flutter that allows users to manage monthly budgets and record financial transactions such as income and expenses, with data persistence through a REST API.",
+            "highlights": [
+                "Cross-platform mobile development with Flutter",
+                "Dynamic budget management by category",
+                "Structured income and expense tracking",
+                "Client-server architecture using REST API",
+                "Relational database persistence"
+            ]
+        },
+        {
+            "slug": "ecommerce-accessible",
+            "hook": "Designed for everyone. No exceptions.",
+            "title": "Space Ecommerce Experience",
+            "description": "Ecommerce-style web application built with a strong focus on accessibility, following W3C guidelines and WCAG standards to improve usability for users with visual impairments.",
+            "highlights": [
+                "WCAG accessibility compliance",
+                "Full keyboard navigation support",
+                "Proper semantic HTML and ARIA usage",
+                "Optimized contrast and visual hierarchy"
+            ]
+        },
+        {
+            "slug": "SDDA",
+            "hook": "Digitizing legal processes with structure and clarity.",
+            "title": "Digital Child Support Management System",
+            "description": "Web platform designed to digitally manage child support claims, enabling the structuring of complex legal forms and the secure, organized storage of information to facilitate proper review and processing by relevant authorities.",
+            "highlights": [
+                "Dynamic forms with advanced validation",
+                "Structured legal information handling",
+                "Data integrity through relational database design",
+                "Full-stack architecture with clear responsibility separation"
+            ]
+        }
+    ]
+}

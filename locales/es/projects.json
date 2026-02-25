@@ -1,0 +1,71 @@
+{
+    "title": "Mis Proyectos",
+    "project": "Proyecto",
+    "role_one": "Rol",
+    "role_other": "Roles",
+    "view": "Vista de proyecto",
+    "gallery": "Mira la galería",
+    "list": [
+        {
+            "slug": "urban-transport-dashboard",
+            "hook": "Convierte datos en métricas claras y visualiza el movimiento urbano.",
+            "title": "Urban Transport Dashboard",
+            "description": "Dashboard web responsive orientado al análisis de datos de líneas de tren, permitiendo calcular y visualizar métricas clave como flujo diario de pasajeros, demanda por líneas, e intervalos de llegada mediante tablas y gráficos interactivos.",
+            "highlights": [
+                "Arquitectura basada en componentes reutilizables",
+                "Visualización estructurada de datos complejos",
+                "Diseño responsive optimizado para distintos dispositivos",
+                "Enfoque en escalabilidad y mantenibilidad"
+            ]
+        },
+        {
+            "slug": "notes-react-app",
+            "hook": "Organiza tus ideas. Accede a ellas cuando lo necesites.",
+            "title": "Gestor de Notas Escritas",
+            "description": "Aplicación web para la creación y gestión de notas con persistencia en base de datos relacional, implementando operaciones CRUD completas bajo una arquitectura cliente-servidor.",
+            "highlights": [
+                "Separación clara entre frontend y backend",
+                "Consumo de API REST",
+                "Persistencia de datos con base relacional",
+                "Validaciones estructuradas en cliente y servidor"
+            ]
+        },
+        {
+            "slug": "KOBE",
+            "hook": "Controla tu dinero. Visualiza tu futuro financiero.",
+            "title": "KOBEY - Administrador de Finanzas Personales",
+            "description": "Aplicación móvil desarrollada con Flutter que permite gestionar presupuestos mensuales y registrar movimientos financieros como ingresos y gastos, con persistencia de datos mediante API REST.",
+            "highlights": [
+                "Desarrollo mobile multiplataforma con Flutter",
+                "Gestión de presupuestos dinámicos por categoría",
+                "Registro estructurado de ingresos y gastos",
+                "Arquitectura cliente-servidor con API REST",
+                "Persistencia de datos en base relacional"
+            ]
+        },
+        {
+            "slug": "ecommerce-accesible",
+            "hook": "Diseñado para todos. Sin excepciones.",
+            "title": "Space Ecommerce Experience",
+            "description": "Aplicación web tipo ecommerce desarrollada con enfoque en accesibilidad digital, siguiendo lineamientos de la W3C y criterios WCAG para mejorar la experiencia de usuarios con visión limitada.",
+            "highlights": [
+                "Cumplimiento de estándares de accesibilidad (WCAG)",
+                "Navegación completa por teclado",
+                "Uso correcto de HTML semántico y atributos ARIA",
+                "Optimización de contraste y jerarquía visual"
+            ]
+        },
+        {
+            "slug": "SDDA",
+            "hook": "Digitalizando procesos legales con estructura y claridad",
+            "title": "Sistema Digital de Demandas Alimenticias",
+            "description": "Plataforma web diseñada para la gestión de demandas alimenticias, permitiendo estructurar formularios complejos y almacenar información de manera segura y organizada, facilitando su procesamiento por parte de autoridades competentes.",
+            "highlights": [
+                "Formularios dinámicos con validación avanzada",
+                "Estructuración formal de información legal",
+                "Integridad de datos mediante base relacional",
+                "Arquitectura full stack con separación de responsabilidades"
+            ]
+        }
+    ]
+}
