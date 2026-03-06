@@ -38,7 +38,7 @@ function Hero() {
             </div>
             <div
                 id="stairs"
-                className="bg-[url('/images/stairs.png')] bg-cover bg-position-[20%_center] md:bg-center -translate-y-[22%] h-screen w-full"
+                className="bg-[url('/images/stairs.webp')] bg-cover bg-position-[20%_center] md:bg-center -translate-y-[22%] h-screen w-full"
             />
             {isOpen &&
                 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
