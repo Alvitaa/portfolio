@@ -39,7 +39,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          external_repository: Alvita/Alvita.github.io
+          external_repository: Alvitaa/Alvitaa.github.io
           publish_dir: ./dist
           publish_branch: main
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
