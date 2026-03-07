@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+
 import About from "../components/About/About";
-import Announcement from "../components/Announcement/Announcement";
 import Beam from "../components/Beam/Beam";
 import Footer from "../components/Footer/Footer";
 import PreFooter from "../components/Footer/PreFooter";
 import Hero from "../components/Hero/Hero";
 import Nav from "../components/Nav/Nav";
 import ProjectsPreview from "../components/Projects/ProjectsPreview";
-import { useEffect } from "react";
+import Skills from "../components/Skills/Skills";
 
 function Home() {
   const { t } = useTranslation("home");
@@ -23,7 +24,7 @@ function Home() {
         <Nav />
         <Hero />
         <About />
-        <Announcement />
+        <Skills />
         <ProjectsPreview />
         <PreFooter />
         <Footer />

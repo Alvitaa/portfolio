@@ -7,6 +7,7 @@ import { FaTrainSubway } from "react-icons/fa6";
 function Nav() {
     const { t, i18n } = useTranslation("home");
     const [isScrolled, setIsScrolled] = useState(false);
+    const isHome = location.pathname === "/portfolio/" || location.pathname === "/portfolio";
 
     useEffect(() => {
         const hero = document.getElementById("hero");
@@ -28,11 +29,12 @@ function Nav() {
     }
 
     return (
-        <nav id="nav" className={`sticky top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled ? "bg-white" : "bg-transparent backdrop-blur-md"}`}>
+        <nav id="nav" className={`${isHome ? "sticky" : "relative"} top-0 w-full gap-4 h-10 z-10 font-bold border-b flex place-content-end items-center shadow ${isScrolled || !isHome ? "bg-white" : "bg-transparent backdrop-blur-md"}`}>
             <FaTrainSubway className="text-xl absolute left-5" title={t("nav.love")} />
             <div className="absolute left-1/2 -translate-x-1/2 hidden gap-10 flex-1 md:flex md:flex-row md:place-content-center">
                 <a href="#hero">{t("nav.hero")}</a>
                 <a href="#about">{t("nav.about")}</a>
+                <a href="#skills">{t("nav.skills")}</a>
                 <a href="#projects">{t("nav.projects")}</a>
             </div>
             <div className="flex flex-row gap-2 items-center">
@@ -43,7 +45,7 @@ function Nav() {
                 <span className="font-bold">PE</span>
             </div>
             <div
-                className={`flex flex-row place-content-center cursor-pointer gap-2 w-fit border-l text-black h-full px-4 py-2 text-center ${isScrolled ? "bg-main text-white" : "bg-transparent"}`}
+                className={`flex flex-row place-content-center cursor-pointer gap-2 w-fit border-l text-black h-full px-4 py-2 text-center ${isScrolled || !isHome ? "bg-main text-white" : "bg-transparent"}`}
                 onClick={() => toggleLanguage()}
                 title={t("nav.language")}
             >
